@@ -14,5 +14,5 @@ valor_final_a_pagar = juros_compostos(quantia_a_emprestar,taxa_de_juros_anual,pr
 print(f"O montante total calculado é: {locale.currency(valor_final_a_pagar,grouping=True)}.")
 print()
 #Usando Mortgege Loan
-financiamento = Loan(quantia_a_emprestar,taxa_de_juros_anual/100,prazo)
+financiamento = Loan(quantia_a_emprestar,taxa_de_juros_anual/100,prazo,currency='R$')
 print(financiamento.summarize)
